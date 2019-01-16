@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FridleyEthanHW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="My name is Ethan Fridley" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1J-We-bw9">
+                                <rect key="frame" x="124.5" y="10" width="231" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIq-fl-jKf">
+                                <rect key="frame" x="20" y="211.5" width="440" height="88.5"/>
+                                <string key="text">I am a Computer Science student attending USC. Before I did computer sciecnce I was a theater carpenter and set desginer, and built and designed sets for both film and theater</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="52O-pU-bTv">
+                                <rect key="frame" x="138.5" y="66" width="203" height="135.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="52O-pU-bTv" secondAttribute="height" multiplier="3:2" id="H1T-kO-2he"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="v1J-We-bw9" secondAttribute="trailing" id="09E-vt-4G0"/>
+                            <constraint firstItem="RIq-fl-jKf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Si-TA-jzV"/>
+                            <constraint firstItem="v1J-We-bw9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Gt-3g-xxB"/>
+                            <constraint firstItem="52O-pU-bTv" firstAttribute="top" secondItem="v1J-We-bw9" secondAttribute="bottom" constant="30" id="6Qh-51-EuD"/>
+                            <constraint firstItem="v1J-We-bw9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="PMy-E7-9HE"/>
+                            <constraint firstItem="52O-pU-bTv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QLu-HP-0UX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RIq-fl-jKf" secondAttribute="trailing" constant="20" id="Z3f-ib-9J7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RIq-fl-jKf" secondAttribute="bottom" constant="20" id="g2P-cm-W9o"/>
+                            <constraint firstItem="v1J-We-bw9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hoX-hM-KrV"/>
+                            <constraint firstItem="RIq-fl-jKf" firstAttribute="top" relation="lessThanOrEqual" secondItem="52O-pU-bTv" secondAttribute="bottom" constant="50" id="wz5-Ck-xQ4"/>
+                            <constraint firstItem="RIq-fl-jKf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="52O-pU-bTv" secondAttribute="bottom" constant="10" id="z3K-NO-6gF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ProfileImage" width="540" height="360"/>
+    </resources>
+</document>
